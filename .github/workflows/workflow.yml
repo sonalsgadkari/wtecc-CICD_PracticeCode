@@ -1,0 +1,10 @@
+name: myworkflow
+on: 
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+jobs:
+  build:
+    runs-on: win-vm
+    container: python:3.9-slim
